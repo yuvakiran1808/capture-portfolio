@@ -1,8 +1,10 @@
 import React from "react";
+//import pages
+import AboutUs from './pages/AboutUs';
 function App() {
   return (
     <div className="App">
-      <h1 className="center">YUVA SAI KIRAN</h1>
+      <AboutUs />
     </div>
   );
 }
