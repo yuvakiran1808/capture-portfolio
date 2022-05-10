@@ -1,6 +1,7 @@
 import React from "react";
 //import component pages
 import AboutSection from "../components/AboutSection";
+import FaqSection from "../components/FaqSection";
 import ServicesSection from "../components/ServicesSection";
 
 
@@ -9,7 +10,8 @@ const AboutUs = ()=>{
     return(
      <div>
         <AboutSection />
-      <ServicesSection />
+       <ServicesSection />
+       <FaqSection />
      </div>
     );
 };
