@@ -7,7 +7,7 @@ const FaqSection = ()=>{
     return(
       <Faq>
           <h2>
-              Any Questions <span>FAQ</span>
+              Any Questions? <span>FAQ</span>
           </h2>
           <div className="question">
               <h3>How Do I Start?</h3>
@@ -58,7 +58,6 @@ h2{
 .faq-line{
     background: #cccccc;
     height: 0.2rem;
-    margin: 2rem 0rem;
     width: 100%;
 }
 .question{
