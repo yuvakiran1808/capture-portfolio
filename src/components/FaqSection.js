@@ -1,46 +1,52 @@
 import React from "react";
 import styled from "styled-components";
 import { About } from "../styles";
-
-
+import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
+import { motion } from "framer-motion";
+import { paraAnim } from "../animations";
 const FaqSection = ()=>{
+
     return(
       <Faq>
           <h2>
               Any Questions? <span>FAQ</span>
           </h2>
-          <div className="question">
-              <h3>How Do I Start?</h3>
+          <AnimateSharedLayout>
+          <Toggle title = "How Do I Start?">
+          <div  className="question">
               <div className="answer">
-                 <p>Lorem ipsum dolor sit amet.</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sunt.</p>
+                  <motion.p variants={paraAnim} initial = "hidden" animate = "show">Lorem ipsum dolor sit amet.</motion.p>
+                  <motion.p variants={paraAnim} initial = "hidden" animate = "show" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sunt.</motion.p>
               </div>
-              <div className="faq-line"></div>
           </div>
-          <div className="question">
-              <h3>How Do I Start?</h3>
+          </Toggle>
+
+          <Toggle title = "How Do I Start?">
+          <div  className="question" >
               <div className="answer">
-                 <p>Lorem ipsum dolor sit amet.</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sunt.</p>
+                  <motion.p variants={paraAnim} initial = "hidden" animate = "show">Lorem ipsum dolor sit amet.</motion.p>
+                  <motion.p variants={paraAnim} initial = "hidden" animate = "show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sunt.</motion.p>
               </div>
-              <div className="faq-line"></div>
           </div>
-          <div className="question">
-              <h3>How Do I Start?</h3>
+          </Toggle>
+          <Toggle title = "How Do I Start?">
+          <div  className="question" >
               <div className="answer">
-                 <p>Lorem ipsum dolor sit amet.</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sunt.</p>
+                  <motion.p variants={paraAnim} initial = "hidden" animate = "show">Lorem ipsum dolor sit amet.</motion.p>
+                  <motion.p variants={paraAnim} initial = "hidden" animate = "show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sunt.</motion.p> 
               </div>
-              <div className="faq-line"></div>
           </div>
-          <div className="question">
-              <h3>How Do I Start?</h3>
+          </Toggle>
+          <Toggle title = "How Do I Start?">
+          <div  className="question" >
               <div className="answer">
-                 <p>Lorem ipsum dolor sit amet.</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sunt.</p>
+                  <motion.p variants={paraAnim} initial = "hidden" animate = "show">Lorem ipsum dolor sit amet.</motion.p>
+                  <motion.p variants={paraAnim} initial = "hidden" animate = "show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, sunt.</motion.p>
               </div>
-              <div className="faq-line"></div> 
           </div>
+          </Toggle>
+          </AnimateSharedLayout>
       </Faq>
     );
 };
@@ -61,11 +67,11 @@ h2{
     width: 100%;
 }
 .question{
-    padding: 3rem 0rem;
+    padding: 2rem 0rem;
     cursor: pointer;
 }
 .answer{
-    padding: 2rem 0rem;
+    /* padding: 2rem 0rem; */
     p{
         padding: 1rem 0rem;
     }

@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
         }
         h3{
             color: white;
+            margin: 1rem 0rem;
         }
         h4{
             font-weight: bold;
